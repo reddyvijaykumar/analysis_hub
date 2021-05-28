@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #574d9b;
+  --white: #ffffff;
+  --carbon-10: #dce1e7;
+  --carbon-70: #545f74;
+}
+
+.model {
+  font-family: "IBM Plex Sans", sans-serif;
+  height: 456px;
+  width: 420px;
+  background: var(--white) 0% 0% no-repeat padding-box;
+  margin: auto;
+  position: relative;
+  box-shadow: 0px 0px 12px #aab2c04d;
+  border-radius: 6px;
+  opacity: 1;
+  font-size: 14px;
+  /* overflow-y: auto; */
+}
+.model > p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+.model .cross {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  /* font-size: 12px; */
+  width: 16px;
+  height: 17px;
+  color: var(--carbon-70);
+  text-align: left;
+  font: normal normal normal 17px FabExMDL !important;
+  /* font: normal normal normal 20px/16px FabExMDL !important; */
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: FabExMDL;
+  src: url(FabExMDL.ttf);
+}
+
+.model .list {
+  height: 364px;
+  width: 390px;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-right: 0;
+  overflow-y: auto;
+}
+
+.model .list ul li {
+  border-top: 0.5px solid #f2f4f6;
+  padding: 5px;
+  position: relative;
+}
+.model .list ul li button {
+  color: var(--purple);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.model .list ul li:last-child {
+  border-bottom: 0.5px solid #f2f4f6;
+  padding: 5px;
+}
+/* .model .list ul li {
+  position: relative;
+} */
+.model .list ul li span {
+  position: absolute;
+  right: 30px;
+}
+.model .list ul li span button {
+  width: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--carbon-10) 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  opacity: 1;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
